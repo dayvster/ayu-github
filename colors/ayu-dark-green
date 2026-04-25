@@ -1,0 +1,172 @@
+:root {
+    --bgColor-default: #0f1419 !important;
+    --bgColor-muted: #151b23 !important;
+    --bgColor-inset: #0a0e14 !important;
+    
+    --borderColor-default: #1a2026 !important; 
+    --borderColor-muted: #12171d !important;
+    --borderColor-emphasis: #2b333b !important;
+
+    --fgColor-default: #b3b1ad !important;
+    --fgColor-muted: #626a73 !important;
+    
+    --fgColor-accent: #aad94c !important;   
+    --color-accent-fg: #aad94c !important;
+    --bgColor-accent-emphasis: #aad94c !important;
+    --fgColor-link: #39bae6 !important;
+
+    --button-primary-bgColor-rest: #aad94c !important;
+    --button-primary-fgColor-rest: #0f1419 !important; 
+    --button-primary-bgColor-hover: #bbe67e !important;
+    --fgColor-onEmphasis: #0f1419 !important;
+
+    --fgColor-success: #aad94c !important;
+    --fgColor-attention: #aad94c !important;
+    --fgColor-danger: #f07178 !important;
+    --fgColor-done: #d2a6ff !important;
+    --fgColor-open: #aad94c !important;
+
+    --bgColor-success-emphasis: #aad94c !important;
+    --bgColor-attention-emphasis: #aad94c !important;
+    --bgColor-danger-emphasis: #f07178 !important;
+    --bgColor-done-emphasis: #d2a6ff !important;
+
+    --contribution-default-bgColor-0: #1a2026 !important;
+    --contribution-default-bgColor-1: #222b2a !important;
+    --contribution-default-bgColor-2: #3d5c32 !important;
+    --contribution-default-bgColor-3: #6d8c3d !important;
+    --contribution-default-bgColor-4: #aad94c !important;
+}
+
+[data-level="0"] { fill: #1a2026 !important; }
+[data-level="1"] { fill: #222b2a !important; }
+[data-level="2"] { fill: #3d5c32 !important; }
+[data-level="3"] { fill: #6d8c3d !important; }
+[data-level="4"] { fill: #aad94c !important; }
+
+body {
+    background-color: #0f1419 !important;
+}
+
+header.Header, .Header-old {
+    background-color: #11161d !important;
+    border-bottom: 1px solid #1a2026 !important;
+}
+
+.UnderlineNav-item[aria-current="page"], 
+.UnderlineNav-item.selected {
+    border-bottom-color: #aad94c !important;
+}
+
+.btn-primary, .Button--appearance-primary {
+    color: #0f1419 !important;
+    background-color: #aad94c !important;
+}
+
+.btn-primary:hover, .Button--appearance-primary:hover {
+    background-color: #bbe67e !important;
+}
+
+.Box {
+    background-color: #11161d !important;
+    border-color: #1a2026 !important;
+}
+
+.Box-row--focus-gray {
+    background-color: #151b23 !important;
+}
+
+.ActionList-item--navActive {
+    background: #1a2026 !important;
+    box-shadow: inset 2px 0 0 #aad94c !important;
+}
+
+.markdown-body code {
+    background-color: #1a2026 !important;
+    color: #aad94c !important;
+}
+
+.IssueItem-module__commentCountContainer__gA0U2 {
+    color: #b3b1ad !important;
+}
+
+.prc-Button-ButtonContent-Iohp5 {
+    color: inherit !important;
+}
+
+.header-search-button, .header-search-input {
+    background-color: #0f1419 !important;
+    border-color: #1a2026 !important;
+    color: #b3b1ad !important;
+}
+
+.form-control:focus {
+    border-color: #aad94c !important;
+    box-shadow: 0 0 0 3px rgba(170, 217, 76, 0.2) !important;
+}
+
+.blob-num, .blob-code-inner {
+    background-color: #0a0e14 !important;
+}
+
+.pl-en { color: #aad94c !important; } 
+.pl-s { color: #aad94c !important; }  
+.pl-k { color: #ff8f40 !important; }  
+.pl-c { color: #5c6773 !important; }  
+.pl-v, .pl-smi { color: #b3b1ad !important; } 
+.pl-ent { color: #39bae6 !important; } 
+
+.State--open, .State--green, .open .octicon-issue-opened {
+    background-color: #aad94c !important;
+    color: #0f1419 !important;
+}
+
+.State--merged, .merged .octicon-git-merge {
+    background-color: #d2a6ff !important;
+    color: #0f1419 !important;
+}
+
+.State--closed, .State--red, .closed .octicon-issue-closed {
+    background-color: #f07178 !important;
+    color: #0f1419 !important;
+}
+
+.Counter {
+    background-color: #1a2026 !important;
+    color: #b3b1ad !important;
+}
+
+.Progress-item.success {
+    background-color: #aad94c !important;
+}
+
+.TopicTag {
+    background-color: rgba(170, 217, 76, 0.1) !important;
+    color: #aad94c !important;
+}
+
+.TimelineItem-badge {
+    background-color: #11161d !important;
+    border-color: #1a2026 !important;
+    color: #b3b1ad !important;
+}
+
+.TimelineItem::before {
+    background-color: #1a2026 !important;
+}
+
+.blob-code-addition { background-color: rgba(170, 217, 76, 0.15) !important; }
+.blob-code-deletion { background-color: rgba(240, 113, 120, 0.15) !important; }
+.blob-num-addition { background-color: rgba(170, 217, 76, 0.2) !important; }
+.blob-num-deletion { background-color: rgba(240, 113, 120, 0.2) !important; }
+
+.Label {
+    border-color: #2b333b !important;
+    color: #b3b1ad !important;
+}
+
+.tooltip-inner {
+    background-color: #11161d !important;
+    color: #b3b1ad !important;
+    border: 1px solid #aad94c !important;
+}

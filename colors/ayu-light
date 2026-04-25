@@ -1,0 +1,135 @@
+:root {
+    --bgColor-default: #ffffff !important;
+    --bgColor-muted: #f3f4f5 !important;
+    --bgColor-inset: #fafafa !important;
+    
+    --borderColor-default: #d1d5da !important; 
+    --borderColor-muted: #e1e4e8 !important;
+    --borderColor-emphasis: #1b1f23 !important;
+
+    --fgColor-default: #1a1f24 !important;
+    --fgColor-muted: #57606a !important;
+    
+    --fgColor-accent: #e67e22 !important;   
+    --color-accent-fg: #e67e22 !important;
+    --bgColor-accent-emphasis: #ff9940 !important;
+    --fgColor-link: #007acc !important;
+
+    --button-primary-bgColor-rest: #ff9940 !important;
+    --button-primary-fgColor-rest: #1a1f24 !important; 
+    --button-primary-bgColor-hover: #e68a00 !important;
+    --fgColor-onEmphasis: #1a1f24 !important;
+
+    --fgColor-success: #388a34 !important;
+    --fgColor-attention: #9a6700 !important;
+    --fgColor-danger: #cf222e !important;
+    --fgColor-done: #8250df !important;
+    --fgColor-open: #388a34 !important;
+
+    --bgColor-success-emphasis: #388a34 !important;
+    --bgColor-attention-emphasis: #9a6700 !important;
+    --bgColor-danger-emphasis: #cf222e !important;
+    --bgColor-done-emphasis: #8250df !important;
+
+    --contribution-default-bgColor-0: #ebedf0 !important;
+    --contribution-default-bgColor-1: #ffd166 !important;
+    --contribution-default-bgColor-2: #ffad33 !important;
+    --contribution-default-bgColor-3: #ff9940 !important;
+    --contribution-default-bgColor-4: #e67e22 !important;
+}
+
+[data-level="0"] { fill: #ebedf0 !important; }
+[data-level="1"] { fill: #ffd166 !important; }
+[data-level="2"] { fill: #ffad33 !important; }
+[data-level="3"] { fill: #ff9940 !important; }
+[data-level="4"] { fill: #e67e22 !important; }
+
+body {
+    background-color: #ffffff !important;
+    color: #1a1f24 !important;
+}
+
+header.Header, .Header-old {
+    background-color: #f6f8fa !important;
+    border-bottom: 1px solid #d1d5da !important;
+}
+
+.UnderlineNav-item[aria-current="page"], 
+.UnderlineNav-item.selected {
+    border-bottom-color: #ff9940 !important;
+    color: #1a1f24 !important;
+    font-weight: 600 !important;
+}
+
+.btn-primary, .Button--appearance-primary {
+    color: #1a1f24 !important;
+    background-color: #ff9940 !important;
+    border: 1px solid rgba(27,31,35,0.15) !important;
+}
+
+.Box {
+    background-color: #ffffff !important;
+    border-color: #d1d5da !important;
+}
+
+.Box-row--focus-gray {
+    background-color: #f6f8fa !important;
+}
+
+.ActionList-item--navActive {
+    background: #e1e4e8 !important;
+    box-shadow: inset 2px 0 0 #ff9940 !important;
+}
+
+.markdown-body code {
+    background-color: #f3f4f5 !important;
+    color: #d97706 !important;
+    border: 1px solid #e1e4e8 !important;
+}
+
+.header-search-button, .header-search-input {
+    background-color: #ffffff !important;
+    border-color: #d1d5da !important;
+    color: #1a1f24 !important;
+}
+
+.form-control:focus {
+    border-color: #ff9940 !important;
+    box-shadow: 0 0 0 3px rgba(255, 153, 64, 0.3) !important;
+}
+
+.State--open, .State--green, .open .octicon-issue-opened {
+    background-color: #388a34 !important;
+    color: #ffffff !important;
+}
+
+.State--merged, .merged .octicon-git-merge {
+    background-color: #8250df !important;
+    color: #ffffff !important;
+}
+
+.State--closed, .State--red, .closed .octicon-issue-closed {
+    background-color: #cf222e !important;
+    color: #ffffff !important;
+}
+
+.Counter {
+    background-color: #e1e4e8 !important;
+    color: #1a1f24 !important;
+    font-weight: 600 !important;
+}
+
+.blob-code-inner {
+    color: #1a1f24 !important;
+}
+
+.pl-en { color: #a37acc !important; } 
+.pl-s { color: #86b300 !important; }  
+.pl-k { color: #f07171 !important; }  
+.pl-c { color: #969896 !important; }  
+.pl-ent { color: #36a3d9 !important; } 
+
+.tooltip-inner {
+    background-color: #1a1f24 !important;
+    color: #ffffff !important;
+}
