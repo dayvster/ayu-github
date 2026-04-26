@@ -1,0 +1,190 @@
+:root {
+    --ayu-markup: #f28779;
+    --ayu-operator: #f29e74;
+    --ayu-keyword: #ffa659;
+    --ayu-func: #ffcd66;
+    --ayu-special: #d9be98;
+    --ayu-constant: #dfbfff;
+    --ayu-string: #d5ff80;
+    --ayu-regexp: #95e6cb;
+    --ayu-entity: #73d0ff;
+    --ayu-tag: #5ccfe6;
+    --ayu-comment: #6e7c8f;
+
+    --bgColor-default: #1f2430 !important;
+    --bgColor-muted: #242936 !important;
+    --bgColor-inset: #171c24 !important;
+    --bgColor-accent: #181c26 !important;
+    
+    --borderColor-default: #2d3343 !important; 
+    --borderColor-muted: #1a1f29 !important;
+    --borderColor-emphasis: #3d475c !important;
+
+    --fgColor-default: #cbccc6 !important;
+    --fgColor-muted: #707a8c !important;
+    
+    --fgColor-accent: #ffcc66 !important;   
+    --color-accent-fg: #ffcc66 !important;
+    --bgColor-accent-emphasis: #ffcc66 !important;
+    --fgColor-link: #5ccfe6 !important;
+
+    --button-primary-bgColor-rest: #ffcc66 !important;
+    --button-primary-fgColor-rest: #1f2430 !important; 
+    --button-primary-bgColorHover: #ffd580 !important;
+    --fgColor-onEmphasis: #1f2430 !important;
+
+    --fgColor-success: #d5ff80 !important;
+    --fgColor-attention: #ffad66 !important;
+    --fgColor-danger: #f28779 !important;
+    --fgColor-done: #dfbfff !important;
+    --fgColor-open: #d5ff80 !important;
+
+    --bgColor-success-emphasis: #d5ff80 !important;
+    --bgColor-attention-emphasis: #ffad66 !important;
+    --bgColor-danger-emphasis: #f28779 !important;
+    --bgColor-done-emphasis: #dfbfff !important;
+
+    --contribution-default-bgColor-0: #242936 !important;
+    --contribution-default-bgColor-1: #425428 !important;
+    --contribution-default-bgColor-2: #5e773a !important;
+    --contribution-default-bgColor-3: #85a557 !important;
+    --contribution-default-bgColor-4: #d5ff80 !important;
+}
+
+[data-level="0"] { fill: var(--contribution-default-bgColor-0) !important; }
+[data-level="1"] { fill: var(--contribution-default-bgColor-1) !important; }
+[data-level="2"] { fill: var(--contribution-default-bgColor-2) !important; }
+[data-level="3"] { fill: var(--contribution-default-bgColor-3) !important; }
+[data-level="4"] { fill: var(--contribution-default-bgColor-4) !important; }
+
+.ContributionCalendar-day {
+    outline: 1px solid rgba(0, 0, 0, 0.2) !important;
+    border-radius: 2px !important;
+}
+
+body {
+    background-color: var(--bgColor-default) !important;
+}
+
+header.Header, .Header-old {
+    background-color: var(--bgColor-accent) !important;
+    border-bottom: 1px solid var(--borderColor-default) !important;
+}
+
+.UnderlineNav-item[aria-current="page"], 
+.UnderlineNav-item.selected {
+    border-color: var(--fgColor-accent) !important;
+}
+
+.btn-primary, .Button--appearance-primary {
+    background-color: var(--button-primary-bgColor-rest) !important;
+    color: var(--button-primary-fgColor-rest) !important;
+}
+
+.btn-primary:hover, .Button--appearance-primary:hover {
+    background-color: var(--button-primary-bgColorHover) !important;
+}
+
+.Box {
+    background-color: var(--bgColor-accent) !important;
+    border-color: var(--borderColor-default) !important;
+}
+
+.Box-row--focus-gray {
+    background-color: var(--bgColor-muted) !important;
+}
+
+.ActionList-item--navActive {
+    background: var(--borderColor-default) !important;
+    box-shadow: inset 2px 0 0 var(--fgColor-accent) !important;
+}
+
+.markdown-body code {
+    background-color: var(--bgColor-inset) !important;
+    color: var(--fgColor-accent) !important;
+}
+
+.IssueItem-module__commentCountContainer__gA0U2 {
+    color: var(--fgColor-default) !important;
+}
+
+.prc-Button-ButtonContent-Iohp5 {
+    color: inherit !important;
+}
+
+.header-search-button, .header-search-input {
+    background-color: var(--bgColor-default) !important;
+    border-color: var(--borderColor-default) !important;
+    color: var(--fgColor-default) !important;
+}
+
+.form-control:focus {
+    border-color: var(--fgColor-accent) !important;
+    box-shadow: 0 0 0 3px rgba(255, 204, 102, 0.2) !important;
+}
+
+.blob-num, .blob-code-inner {
+    background-color: var(--bgColor-inset) !important;
+}
+
+.pl-en { color: var(--ayu-func) !important; } 
+.pl-s { color: var(--ayu-string) !important; }  
+.pl-k { color: var(--ayu-keyword) !important; }  
+.pl-c { color: var(--ayu-comment) !important; }  
+.pl-v, .pl-smi { color: var(--fgColor-default) !important; } 
+.pl-ent { color: var(--ayu-tag) !important; } 
+
+.State--open, .State--green, .open .octicon-issue-opened {
+    background-color: var(--bgColor-success-emphasis) !important;
+    color: var(--fgColor-onEmphasis) !important;
+}
+
+.State--merged, .merged .octicon-git-merge {
+    background-color: var(--bgColor-done-emphasis) !important;
+    color: var(--fgColor-onEmphasis) !important;
+}
+
+.State--closed, .State--red, .closed .octicon-issue-closed {
+    background-color: var(--bgColor-danger-emphasis) !important;
+    color: var(--fgColor-onEmphasis) !important;
+}
+
+.Counter {
+    background-color: var(--borderColor-default) !important;
+    color: var(--fgColor-default) !important;
+}
+
+.Progress-item.success {
+    background-color: var(--fgColor-success) !important;
+}
+
+.TopicTag {
+    background-color: rgba(92, 207, 230, 0.1) !important;
+    color: var(--ayu-tag) !important;
+}
+
+.TimelineItem-badge {
+    background-color: var(--bgColor-accent) !important;
+    border-color: var(--borderColor-default) !important;
+    color: var(--fgColor-default) !important;
+}
+
+.TimelineItem::before {
+    background-color: var(--borderColor-default) !important;
+}
+
+.blob-code-addition { background-color: rgba(213, 255, 128, 0.15) !important; }
+.blob-code-deletion { background-color: rgba(242, 135, 121, 0.15) !important; }
+.blob-num-addition { background-color: rgba(213, 255, 128, 0.2) !important; }
+.blob-num-deletion { background-color: rgba(242, 135, 121, 0.2) !important; }
+
+.Label {
+    border-color: var(--borderColor-emphasis) !important;
+    color: var(--fgColor-default) !important;
+}
+
+.tooltip-inner {
+    background-color: var(--bgColor-accent) !important;
+    color: var(--fgColor-default) !important;
+    border: 1px solid var(--fgColor-accent) !important;
+}

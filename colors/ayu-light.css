@@ -1,0 +1,178 @@
+:root {
+    --ayu-markup: #f07171;
+    --ayu-operator: #f2a191;
+    --ayu-keyword: #fa8532;
+    --ayu-func: #eba400;
+    --ayu-special: #e59645;
+    --ayu-constant: #a37acc;
+    --ayu-string: #86b300;
+    --ayu-regexp: #4cbf99;
+    --ayu-entity: #22a4e6;
+    --ayu-tag: #55b4d4;
+    --ayu-comment: #adaeb1;
+
+    --bgColor-default: #fcfcfc !important;
+    --bgColor-muted: #f8f9fa !important;
+    --bgColor-inset: #fafafa !important;
+    --bgColor-accent: #f6f8fa !important;
+    
+    --borderColor-default: #d1d5da !important; 
+    --borderColor-muted: #e1e4e8 !important;
+    --borderColor-emphasis: #1b1f23 !important;
+
+    --fgColor-default: #5c6166 !important;
+    --fgColor-muted: #828e9f !important;
+    
+    --fgColor-accent: #f29718 !important;   
+    --color-accent-fg: #f29718 !important;
+    --bgColor-accent-emphasis: #ff9940 !important;
+    --fgColor-link: #22a4e6 !important;
+
+    --button-primary-bgColor-rest: #ff9940 !important;
+    --button-primary-fgColor-rest: #1a1f24 !important; 
+    --button-primary-bgColorHover: #e68a00 !important;
+    --fgColor-onEmphasis: #ffffff !important;
+
+    --fgColor-success: #6cbf43 !important;
+    --fgColor-attention: #fa8532 !important;
+    --fgColor-danger: #f07171 !important;
+    --fgColor-done: #a37acc !important;
+    --fgColor-open: #6cbf43 !important;
+
+    --bgColor-success-emphasis: #6cbf43 !important;
+    --bgColor-attention-emphasis: #fa8532 !important;
+    --bgColor-danger-emphasis: #f07171 !important;
+    --bgColor-done-emphasis: #a37acc !important;
+
+    --contribution-default-bgColor-0: #ebedf0 !important;
+    --contribution-default-bgColor-1: #ffeaa6 !important;
+    --contribution-default-bgColor-2: #ffd166 !important;
+    --contribution-default-bgColor-3: #ffad33 !important;
+    --contribution-default-bgColor-4: #f29718 !important;
+}
+
+[data-level="0"] { fill: var(--contribution-default-bgColor-0) !important; }
+[data-level="1"] { fill: var(--contribution-default-bgColor-1) !important; }
+[data-level="2"] { fill: var(--contribution-default-bgColor-2) !important; }
+[data-level="3"] { fill: var(--contribution-default-bgColor-3) !important; }
+[data-level="4"] { fill: var(--contribution-default-bgColor-4) !important; }
+
+body {
+    background-color: var(--bgColor-default) !important;
+    color: var(--fgColor-default) !important;
+}
+
+header.Header, .Header-old {
+    background-color: var(--bgColor-accent) !important;
+    border-bottom: 1px solid var(--borderColor-default) !important;
+}
+
+.UnderlineNav-item[aria-current="page"], 
+.UnderlineNav-item.selected {
+    border-color: var(--fgColor-accent) !important;
+    color: var(--fgColor-default) !important;
+    font-weight: 600 !important;
+}
+
+.btn-primary, .Button--appearance-primary {
+    background-color: var(--button-primary-bgColor-rest) !important;
+    color: var(--button-primary-fgColor-rest) !important;
+    border: 1px solid rgba(27,31,35,0.15) !important;
+}
+
+.Box {
+    background-color: var(--bgColor-default) !important;
+    border-color: var(--borderColor-default) !important;
+}
+
+.Box-row--focus-gray {
+    background-color: var(--bgColor-muted) !important;
+}
+
+.ActionList-item--navActive {
+    background: var(--borderColor-muted) !important;
+    box-shadow: inset 2px 0 0 var(--fgColor-accent) !important;
+}
+
+.markdown-body code {
+    background-color: var(--bgColor-muted) !important;
+    color: var(--fgColor-accent) !important;
+    border: 1px solid var(--borderColor-muted) !important;
+}
+
+.header-search-button, .header-search-input {
+    background-color: var(--bgColor-default) !important;
+    border-color: var(--borderColor-default) !important;
+    color: var(--fgColor-default) !important;
+}
+
+.form-control:focus {
+    border-color: var(--fgColor-accent) !important;
+    box-shadow: 0 0 0 3px rgba(242, 151, 24, 0.3) !important;
+}
+
+.State--open, .State--green, .open .octicon-issue-opened {
+    background-color: var(--bgColor-success-emphasis) !important;
+    color: var(--fgColor-onEmphasis) !important;
+}
+
+.State--merged, .merged .octicon-git-merge {
+    background-color: var(--bgColor-done-emphasis) !important;
+    color: var(--fgColor-onEmphasis) !important;
+}
+
+.State--closed, .State--red, .closed .octicon-issue-closed {
+    background-color: var(--bgColor-danger-emphasis) !important;
+    color: var(--fgColor-onEmphasis) !important;
+}
+
+.Counter {
+    background-color: var(--borderColor-muted) !important;
+    color: var(--fgColor-default) !important;
+    font-weight: 600 !important;
+}
+
+.blob-code-inner {
+    color: var(--fgColor-default) !important;
+}
+
+.pl-en { color: var(--ayu-constant) !important; } 
+.pl-s { color: var(--ayu-string) !important; }  
+.pl-k { color: var(--ayu-keyword) !important; }  
+.pl-c { color: var(--ayu-comment) !important; }  
+.pl-v, .pl-smi { color: var(--fgColor-default) !important; } 
+.pl-ent { color: var(--ayu-entity) !important; } 
+
+.Progress-item.success {
+    background-color: var(--fgColor-success) !important;
+}
+
+.TopicTag {
+    background-color: rgba(34, 164, 230, 0.1) !important;
+    color: var(--ayu-entity) !important;
+}
+
+.TimelineItem-badge {
+    background-color: var(--bgColor-accent) !important;
+    border-color: var(--borderColor-default) !important;
+    color: var(--fgColor-default) !important;
+}
+
+.TimelineItem::before {
+    background-color: var(--borderColor-muted) !important;
+}
+
+.blob-code-addition { background-color: rgba(108, 191, 67, 0.15) !important; }
+.blob-code-deletion { background-color: rgba(240, 113, 113, 0.15) !important; }
+.blob-num-addition { background-color: rgba(108, 191, 67, 0.2) !important; }
+.blob-num-deletion { background-color: rgba(240, 113, 113, 0.2) !important; }
+
+.Label {
+    border-color: var(--borderColor-emphasis) !important;
+    color: var(--fgColor-default) !important;
+}
+
+.tooltip-inner {
+    background-color: var(--borderColor-emphasis) !important;
+    color: var(--bgColor-default) !important;
+}
